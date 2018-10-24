@@ -39,8 +39,8 @@ public class areaCalculator {
 	public static double areaRec(double a, double b) {
 		return a * b;
 }//end method
-	public static double areaCirc(double a) {
-		return a;
+	public static double areaCirc(double b) {
+		return b;
 	}
 }//end class
 
