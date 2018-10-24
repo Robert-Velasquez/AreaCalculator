@@ -17,6 +17,9 @@ public class areaCalculator {
 		switch(areaType) {
 		case 1:
 			System.out.println("You chose rectangle. Please type the lengths of the two separate sides.");
+			double length = input.nextInt();
+			double width = input.nextInt();
+			System.out.println(areaRec(length,width));
 			break;
 		case 2:
 			System.out.println("You chose triangle. Please type the length of the base and the height");
@@ -27,13 +30,15 @@ public class areaCalculator {
 		default:
 			System.out.println("Invalid answer. Please try again");
 			//run loop again
-		}
+		}//end switch
 	
+	}	
 	
-	
-	input.close();
-	}
-	// write methods for each calculation type
-	
-}
+
+
+	public static double areaRec(double a, double b) {
+		return a * b;
+}//end method
+}//end class
+
 
